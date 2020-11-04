@@ -1,32 +1,38 @@
-<!doctype html>
-<html lang = "en">
-<head>
-   <meta charset="ut-f-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-with, initial-scale=1">
-   <title>Lai Lai China Bistro</title>
-   <link rel="stylesheet" href="css/boostrap">
-   <link rel="stylesheet" href="css/stylesheet.css">
-   <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<header>
-	<nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Historia</a>	
-  <a class="navbar-brand" href="#">Acerca Us</a>	
-  <a class="navbar-brand" href="#">Productos y Servicios</a>	
-  <a class="navbar-brand" href="#">Registro</a>	
-  <a class="navbar-brand" href="#">Mision y Vision</a>  
-     <div class="container">
-          <a href="index.html" class="">
-          <div id="ipc.jpg" alt "IPC"></div>
-          </a>
-        </div>
-       </nav>   
-	</header>
 
-	<script src="js/jquery-2.1.2.min.js"></script>
-	<script src="js/boostrap"></script>
-	<script src="js/script.js"></script> 
+<html>
+<heaa>
+	<title>Ingreso con password</title>
+	Z<script type="text/javascript">
+		function comprobarClave()
+		{
+			clave1 = document.f1.clave1.value
+			clave2 = document.f1.clave2.value
+
+			if (clave1=="admin" && clave2 == "conejo") {
+				alert("Los datos son iguanas...\n Welcome");
+				var href = "prog.html";
+				window.location = href;
+			}
+        else {
+         	     alert("Los datos no son iguanas...\n Repite way");
+			 	var href = "index.html";
+				window.location = href;
+
+         }
+
+		}
+	</script>
+</head>
+
+<body>
+	<h1> Ingeso al programa principal </h1>
+
+	<br>
+    <form action = "" name = "f1"> 
+     Ingrese Usuario: <input type="password" name="clave1" size="10"><br>
+     Ingrese Clave  : <input type="password" name="clave2" size="10"><br>
+     <input type="buttom" value="Comprobar" onclick = "comprobarClave()">
+
+    </form>
 </body>
 </html>
